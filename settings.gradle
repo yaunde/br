@@ -1,0 +1,9 @@
+rootProject.name = 'br'
+
+include 'br-controller'
+include 'br-core'
+include 'br-web'
+
+rootProject.children.each {project ->
+    project.buildFileName = "${project.name}.gradle"
+}
