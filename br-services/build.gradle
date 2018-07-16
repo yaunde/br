@@ -1,0 +1,12 @@
+
+dependencies {
+
+}
+task "create-dirs" << {
+    sourceSets*.java.srcDirs*.each {
+        it.mkdirs()
+    }
+    sourcScts*.resources.srcDirs*.each{
+        it.midirs()
+    }
+}
